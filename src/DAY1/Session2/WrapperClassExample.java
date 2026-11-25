@@ -9,10 +9,10 @@ public class WrapperClassExample {
         System.out.println("Value of b after boxing: " + b);
         //Auto-boxing: Converting primitive type to wrapper class object automatically
         Integer c = a;
-        System.out.println("Value of d after auto-boxing: " + c);
+        System.out.println("Value of c after auto-boxing: " + c);
         //Unboxing: Converting wrapper class object to primitive type
         int d = b.intValue();   
-        System.out.println("Value of c after unboxing: " + d);
+        System.out.println("Value of d after unboxing: " + d);
         //Auto-unboxing: Converting wrapper class object to primitive type automatically
         int e = c;
         System.out.println("Value of e after auto-unboxing: " + e); 

@@ -142,8 +142,139 @@
                b. String builder: Mutable
                c. String: Immutable
 
-   # Autoboxing and Unboxing:
+   # Boxing and Unboxing
+
+    1. Autoboxing and Unboxing:
       - Autoboxing: The automatic conversion of a primitive data type to its corresponding wrapper class
-      
+      - Example: Integer a = 10; // Auto-boxing
       - Unboxing: The automatic conversion of a wrapper class to its corresponding primitive data type
+      - Example: int b = a; // Auto-unboxing
+
+   2. Manual Boxing and Unboxing:
+      - Manual Boxing: The explicit conversion of a primitive data type to its corresponding wrapper class
+      - Example: Integer a = Integer.valueOf(10); // Manual boxing
+      - Manual Unboxing: The explicit conversion of a wrapper class to its corresponding primitive data type
+      - Example: int b = a.intValue(); // Manual unboxing
+
+# Conditional Statements
+
+   1. if statement
+      - The if statement is used to execute a block of code if a specified condition is true.
+      - Example:
+                if (condition) {
+                    // code to be executed if condition is true
+                }
+
+   2. if-else statement
+      - The if-else statement is used to execute one block of code if a specified condition is true, and another block of code if the condition is false.
+      - Example:
+                if (condition) {
+                    // code to be executed if condition is true
+                } else {
+                    // code to be executed if condition is false
+                }
+
+   3. if-else-if statement
+      - The if-else-if statement is used to execute one block of code from multiple conditions  
+      - Example:
+                if (condition1) {
+                    // code to be executed if condition1 is true
+                } else if (condition2) {
+                    // code to be executed if condition2 is true
+                } else {
+                    // code to be executed if both conditions are false
+                }
+
+   4. switch statement
+      - The switch statement is used to execute one block of code from multiple options based on the
+   value of a variable or expression.
+      - Example:
+                switch (variable) {
+                    case value1:
+                        // code to be executed if variable equals value1
+                        break;
+                    case value2:
+                        // code to be executed if variable equals value2
+                        break;
+                    default:
+                        // code to be executed if variable does not match any case
+                }
+
+   5. Nested if statement
+      - A nested if statement is an if statement that is placed inside another if statement. It allows for more complex decision-making by checking multiple conditions.
+      - Example:
+                if (condition1) {
+                    // code to be executed if condition1 is true
+                    if (condition2) {
+                        // code to be executed if condition2 is true
+                    } else {
+                        // code to be executed if condition2 is false
+                    }
+                } else {
+                    // code to be executed if condition1 is false
+                }
+
+
+# Loops
+
+   1. for loop
+      - The for loop is used to execute a block of code a specific number of times.
+      - Example:
+                for (initialization; condition; increment/decrement) {
+                    // code to be executed
+                }
+
+   2. while loop
+      - The while loop is used to execute a block of code as long as a specified condition is true.
+      - Example:
+                while (condition) {
+                    // code to be executed
+                }
+
+   3. do-while loop
+      - The do-while loop is similar to the while loop, but it guarantees that the block of code will be executed at least once, even if the condition is false.
+      - Example:
+                do {
+                    // code to be executed
+                } while (condition);
+
+   4. for-each loop (enhanced for loop)
+      - The for-each loop is used to iterate over elements in an array or a collection.
+      - Example:  
+                for (dataType variable : arrayOrCollection) {
+                    // code to be executed
+                }
+
+   5. Nested loops
+      - Nested loops are loops that are placed inside another loop. The inner loop is executed for each iteration of the outer loop.
+      - Example:
+                for (initialization; condition; increment/decrement) {
+                    // code to be executed
+                    for (initialization; condition; increment/decrement) {
+                        // code to be executed
+                    }
+                }
+
+   # Break and Continue Statements
+
+      1. break statement
+         - The break statement is used to exit a loop or switch statement prematurely, before the loop or switch has completed all its iterations or cases.
+         - Example:
+                   for (int i = 0; i < 10; i++) {
+                       if (i == 5) {
+                           break; // exit the loop when i equals 5
+                       }
+                       System.out.println(i);
+                   }
+
+      2. continue statement
+         - The continue statement is used to skip the current iteration of a loop and move on to the next iteration.
+         - Example:
+                   for (int i = 0; i < 10; i++) {
+                       if (i % 2 == 0) {
+                           continue; // skip even numbers
+                       }
+                       System.out.println(i); // print only odd numbers
+                   }
+
       

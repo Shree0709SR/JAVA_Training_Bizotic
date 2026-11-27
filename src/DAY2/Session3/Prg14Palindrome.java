@@ -48,4 +48,3 @@ public class Prg14Palindrome {
     }
 }
 
-
